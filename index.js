@@ -21,5 +21,6 @@ function searchWeather() {
             document.getElementById("wind-speed").innerHTML = `${windSpeed} m/s`;
         })
         .catch(error => console.error("Error fetching data:", error));
+
 }
 
