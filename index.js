@@ -13,12 +13,12 @@ function searchWeather() {
             const humidity = data.main.humidity;
             const windSpeed = data.wind.speed;
 
-            document.getElementById("location").innerText = location;
-            document.getElementById("temperature").innerText = temperature;
-            document.getElementById("description").innerText = description;
+            document.getElementById("location").innerHTML = location;
+            document.getElementById("temperature").innerHTML = temperature;
+            document.getElementById("description").innerHTML = description;
             document.getElementById("weather-icon").src = iconUrl;
-            document.getElementById("humidity").innerText = `${humidity}%`;
-            document.getElementById("wind-speed").innerText = `${windSpeed} m/s`;
+            document.getElementById("humidity").innerHTML = `${humidity}%`;
+            document.getElementById("wind-speed").innerHTML = `${windSpeed} m/s`;
         })
         .catch(error => console.error("Error fetching data:", error));
 }
